@@ -1,0 +1,52 @@
+﻿
+<style>
+    body{
+        /*background-color:#1B1C1D; black*/
+        /*overflow:hidden; /*No scroll*/
+        background-image:url(../../Image/LoginBackground.jfif);
+        background-size: 100% auto; /*一張填滿螢幕*/
+    }    
+
+    #main{
+        margin:auto; /*Horizontal center align*/
+        width:30%;            
+        top:20%;/*Vertical align*/
+    }
+
+    #main label, #main input{
+        font-family:'Microsoft JhengHei'; /*微軟正黑體*/
+        font-size:100%;
+    }        
+
+           
+</style>
+
+<script>
+    $('.ui.menu .item').removeClass('active')
+    $('.ui.menu .item.login').addClass('active')
+</script>
+
+<div id="main" class="ui inverted segment">
+    <form class="ui massive inverted form" method="post">
+
+        <div class="ui field">
+            <label>帳號</label><br>
+            <div class="ui left icon input">
+                <input type="text" placeholder="請輸入帳號...">
+                <i class="user icon"></i>
+            </div>
+        </div>
+
+        <div class="ui field">
+            <label>密碼</label><br>
+            <div class="ui left icon input">
+                <input type="text" placeholder="請輸入密碼...">
+                <i class="unlock alternate icon"></i>
+            </div>
+        </div>
+        <input class="ui large red button" type="button" value="忘記密碼"/>
+        <input class="ui large right floated button" type="submit" value="登入">
+    </form>
+</div>    
+
+

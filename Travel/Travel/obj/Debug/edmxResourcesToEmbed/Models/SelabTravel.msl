@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SelabTravelModelStoreContainer" CdmEntityContainer="selabTravelEntities">
+    <EntitySetMapping Name="Member">
+      <EntityTypeMapping TypeName="SelabTravelModel.Member">
+        <MappingFragment StoreEntitySet="Member">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="acount" ColumnName="acount" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="ssn" ColumnName="ssn" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="sex" ColumnName="sex" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

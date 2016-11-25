@@ -1,0 +1,4 @@
+﻿司服器名稱：140.134.26.69\SQLEXPRESS,1433
+帳號：selabTravel
+密碼：:52005505
+資料庫名稱：selabTravel

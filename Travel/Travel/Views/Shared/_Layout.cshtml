@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="~/Scripts/jquery-3.1.0.js"></script>
+    <link href="~/Semantic-UI-CSS-master/semantic.min.css" rel="stylesheet" />
+    <script src="~/Semantic-UI-CSS-master/semantic.min.js"></script>
+    <style>
+        *{
+            font-family: 'Microsoft JhengHei UI'
+        }
+
+        #login-text{
+            background-color:#2185D0;
+            font-family:'Microsoft JhengHei'; /*微軟正黑體*/
+            font-size:200%;
+        }
+
+        #login-text .menu .item{
+            font-family:'Microsoft JhengHei'; /*微軟正黑體*/
+            font-size:130%;
+        }
+
+        #login-text span{
+            color:white;
+        }
+
+        /*travel.png*/
+        #travel-image{ 
+            width:40px;
+            height:40px;
+            filter: invert(100%);
+        }
+    </style>
+
+    
+
+    <title>我的旅遊書</title>
+</head>
+<body>
+    <div id="login-text" class="ui blue inverted segment" style="opacity:0.8">
+        <a href="~/Login.cshtml" style="position:absolute; left:10px; top:10px">
+            <img id="travel-image" src="~/image/travel.png" />
+            <span>個人旅遊書</span>
+        </a>
+
+        <div class="ui secondary pointing menu">
+            <div class="right menu">
+                <a class="item index" href="~/Home/Index">首頁</a>
+                <a class="item register" href="~/Home/Register">註冊</a>
+                <a class="item about" href="~/Home/About">關於</a>
+                <a class="item member" href="~/Home/Member">會員資料</a>
+                <a class="item login" href="~/Home/Login">登入</a>
+            </div>
+        </div>
+    </div>
+
+    @RenderBody()
+</body>
+</html>
