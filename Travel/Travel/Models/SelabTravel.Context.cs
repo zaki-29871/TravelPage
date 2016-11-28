@@ -26,5 +26,6 @@ namespace Travel.Models
         }
     
         public virtual DbSet<Member> Member { get; set; }
+    
     }
 }
