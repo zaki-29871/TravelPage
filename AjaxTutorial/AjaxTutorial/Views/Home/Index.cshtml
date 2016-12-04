@@ -1,0 +1,83 @@
+﻿@model string
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    *{
+        font-family:Consolas;
+    }
+</style>
+
+<p>
+    Response value: <span id="response">@Model</span>
+</p>
+
+<p>GET Method</p>
+
+<form method="get"  action="/Home/Index">
+    <input type="text" name="name" value="default"/>
+    <input type="submit" value="submit"/>
+</form>
+
+<p>POST Method</p>
+
+<form method="post" action="/Home/Index">
+    <input type="text" name="name" value="default" />
+    <input type="submit" value="submit" />
+</form>
+
+<p>Ajax Method</p>
+
+<input id="ajax-name" type="text" name="name" value="default" />
+<input id="ajax-submit" type="button" value="Submit" onclick="submit()"/>
+
+<script>
+    function submit() {
+        var nameText = $('#ajax-name').val()
+
+        $.ajax({
+            url: '/Home/Ajax',
+            type: 'POST',
+            dataType: 'text',
+            data: { name: nameText },
+            success: function (result, status, xhr) {
+                $('#response').text(result)
+                console.log(status)
+                console.log(xhr)
+            },
+            error: function () {
+                console.log()
+            }
+        })
+    }
+
+    /*$('#ajax-submit').click(function () {
+        var nameText = $('#ajax-name').val()
+
+        $.ajax({
+            url: '/Home/Ajax',
+            type: 'POST',
+            dataType: 'text',
+            data: { name: nameText },
+            success: function (data) {
+                $('#response').text(data)
+            },
+            error: function () {
+                console.log()
+            }
+        })
+    })*/
+
+    /*function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("demo").innerHTML = this.responseText;
+        }
+        };
+        xhttp.open("GET", "ajax_info.txt", true);
+        xhttp.send();
+     }*/
+</script>
+
