@@ -133,6 +133,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Image\account.png" />
+    <Content Include="Image\Aircraft.jpg" />
     <Content Include="Image\LoginBackground.jfif" />
     <Content Include="Image\travel.png" />
     <Content Include="Models\SelabTravel.Context.tt">

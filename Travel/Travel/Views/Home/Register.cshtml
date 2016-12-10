@@ -3,5 +3,159 @@
     $('.ui.menu .item.register').addClass('active')
 </script>
 
-<h2>註冊</h2>
+<style>
+    body {
+        /*background-color:#1B1C1D; black*/
+        /*overflow:hidden; /*No scroll*/
+        background-image: url(../../Image/Aircraft.jpg);
+        background-size: 100% auto; /*一張填滿螢幕*/
+    }
+
+    #text {
+        width: 800px;
+        height: 400px;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    #start-register, #start-dream {
+        color: white;
+        font-size: 500%;
+        font-family: 'Microsoft JhengHei UI';
+        position: absolute;
+        user-select: none;
+        cursor: default;
+    }
+
+    #start-register {
+        top: 200px;
+        left: 150px;
+    }
+
+    #start-dream {
+        top: 270px;
+        left: 320px;
+    }
+
+    #main {
+        width:450px;
+        position:absolute;        
+        top: 300px; /*Vertical align*/
+        right:150px;
+    }
+
+    #main span, #main input, #main .label{
+        font-family: 'Microsoft JhengHei'; /*微軟正黑體*/
+    }
+
+    #main .label{
+        width:150px;
+        float:left;
+        line-height:40px;
+        font-size:150%;
+    }
+
+
+    #main .ui.button.submit{
+        width:450px;
+    }
+</style>
+
+
+<i id="start-register">開始註冊</i>
+<i id="start-dream">夢想啟程</i>
+
+@*<div id="main" class="ui inverted segment">
+        <form class="ui massive inverted form" method="post">
+
+            <div class="ui field">
+                <label>帳號</label><br>
+                <div class="ui left icon input">
+                    <input type="text" placeholder="請輸入帳號...">
+                    <i class="user icon"></i>
+                </div>
+            </div>
+
+            <div class="ui field">
+                <label>密碼</label><br>
+                <div class="ui left icon input">
+                    <input type="password" placeholder="請輸入密碼...">
+                    <i class="unlock alternate icon"></i>
+                </div>
+            </div>
+            <div class="ui field">
+                <label>第二次密碼</label><br>
+                <div class="ui left icon input">
+                    <input type="password" placeholder="請輸入第二次密碼...">
+                    <i class="unlock alternate icon"></i>
+                </div>
+            </div>
+            <div class="ui field">
+                <label>姓名</label><br>
+                <div class="ui left icon input">
+                    <input type="password" placeholder="請輸入姓名...">
+                    <i class="user icon"></i>
+                </div>
+            </div>
+            <input class="ui large right floated button" type="submit" value="註冊"/>
+        </form>
+    </div> *@
+
+<form id="main" method="post">
+    <div class="ui large inverted segment">
+        <div class="label">
+            <span>帳號：</span>
+        </div>
+        
+        <div class="ui left icon input">
+            <input type="text" placeholder="請輸入帳號...">
+            <i class="user icon"></i>
+        </div>
+
+        <div class="ui inverted divider"></div>
+
+        <div class="label">
+            <span>密碼：</span>
+        </div>
+        <div class="ui left icon input">
+            <input type="password" placeholder="請輸入密碼...">
+            <i class="unlock alternate icon"></i>
+        </div>
+
+        <div class="ui inverted divider"></div>
+
+        <div class="label">
+            <span>第二次密碼：</span>
+        </div>
+        <div class="ui left icon input">
+            <input type="password" placeholder="請輸入第二次密碼...">
+            <i class="unlock alternate icon"></i>
+        </div>
+
+        <div class="ui inverted divider"></div>
+
+        <div class="label">
+            <span>姓名：</span>
+        </div>
+        <div class="ui left icon input">
+            <input type="text" placeholder="請輸入姓名...">
+            <i class="male icon"></i>
+        </div>
+
+        <div class="ui inverted divider"></div>
+
+        <div class="label">
+            <span>性別：</span>
+        </div>
+        <div class="ui left icon input">
+            <input type="text" placeholder="請輸入性別...">
+            <i class="heterosexual  icon"></i>
+        </div>
+    </div>
+    <input class="ui massive green button submit" type="submit" value="註冊" />
+</form>
 
