@@ -134,8 +134,10 @@
     <Content Include="Global.asax" />
     <Content Include="Image\account.png" />
     <Content Include="Image\Aircraft.jpg" />
+    <Content Include="Image\逢甲夜市.jpg" />
     <Content Include="Image\LoginBackground.jfif" />
     <Content Include="Image\travel.png" />
+    <Content Include="Image\秋虹谷.jpg" />
     <Content Include="Models\SelabTravel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SelabTravel.edmx</DependentUpon>

@@ -6,22 +6,23 @@
     <script src="~/Semantic-UI-CSS-master/semantic.min.js"></script>
     <style>
         *{
-            font-family: 'Microsoft JhengHei UI'
+            font-family: 'Microsoft JhengHei';
         }
 
-        #login-text{
+        #main-menu{
             background-color:#2185D0;
             font-family:'Microsoft JhengHei'; /*微軟正黑體*/
-            font-size:200%;
+            font-size:0.5em;
+            opacity:0.8;
         }
 
-        #login-text .menu .item{
+        #main-menu .menu .item{
             font-family:'Microsoft JhengHei'; /*微軟正黑體*/
-            font-size:130%;
         }
 
-        #login-text span{
+        #main-menu span{
             color:white;
+            font-size:4em;
         }
 
         /*travel.png*/
@@ -37,7 +38,7 @@
     <title>我的旅遊書</title>
 </head>
 <body>
-    <div id="login-text" class="ui blue inverted segment" style="opacity:0.8">
+    <div id="main-menu" class="ui blue inverted segment">
         <a href="~/Home/Index" style="position:absolute; left:10px; top:10px">
             <img id="travel-image" src="~/Image/travel.png" />
             <span>個人旅遊書</span>
