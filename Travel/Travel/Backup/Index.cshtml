@@ -1,0 +1,156 @@
+﻿<script>
+    $('.ui.menu .item').removeClass('active')
+    $('.ui.menu .item.index').addClass('active')
+
+    $(function () {
+        $('.ui.rating').rating()
+    })
+</script>
+<style>
+    .img-container{
+        width:100%;
+        height:800px;
+    }   
+
+    .img-container.left .detail{
+        position:absolute;
+        height:100%;
+        width:auto;
+        right:10px;
+        left:850px;/*左方圖片寬度800px*/
+        font-family:'Microsoft JhengHei UI' !important; 
+        font-size:1.5em !important;
+    }
+
+    .img-container.left .hover-effect{
+        position:relative;
+        float:left;
+        width:800px;
+        height:800px;
+    }
+
+    .img-container.right .detail{
+        position:absolute;
+        height:100%;
+        width:auto;
+        left:10px;
+        right:850px;/*右方圖片寬度800px*/
+        font-family:'Microsoft JhengHei UI' !important; 
+        font-size:1.5em !important;
+    }    
+
+    .img-container.right .hover-effect{
+        position:relative;
+        float:right;
+        width:800px;
+        height:800px;
+    }
+
+    .img-container .title{
+        text-align:center;
+        width:100%;
+        height:2em;
+        color:white;
+        line-height:2em;
+        border-radius:1em;
+        margin-bottom:0.7em;
+        margin-top:0.7em;
+    }   
+
+    .img-container img{
+        width:800px;
+        height:800px;
+        cursor:pointer;
+        transition: filter 0.5s;
+        overflow:hidden;
+    }
+
+    /*img hover*/
+    .hover-effect:hover img{
+        filter:blur(3px);
+    }
+
+    /*img-message hover*/
+    .hover-effect .img-message{
+        position:absolute;
+        height:0em;
+        width:800px;
+        background-color:#2185D0;
+        line-height:2em;
+        bottom:0;
+        left:0;
+        font-size:2em;
+        color:white;
+        transition: height 0.3s;
+    }
+    
+    .hover-effect:hover .img-message{
+        height:2em;
+    }
+
+     /*img-message content hover*/
+    .hover-effect .img-message *{
+        opacity:0;
+        transition: opacity 0.1s;
+    }
+
+    .hover-effect:hover .img-message *{
+        transition-delay:0.2s;        
+        opacity:1;
+    }
+
+    .hover-effect .img-message span{
+        margin-left:1em;
+    }
+
+
+</style>
+
+
+
+
+<div class="ui segments">
+    <div class="ui inverted segment">
+        <div class="img-container left">
+
+            <div class="hover-effect">
+                <img src="~/Image/逢甲夜市.jpg" width="800" height="800" />
+                <div class="img-message">
+                    <span>熱門程度</span>
+                    <div class="ui huge star rating" data-rating="4" data-max-rating="5"></div>
+                </div>
+            </div>
+
+            <div class="detail">
+                <div class="title" style="background-color:#DB2828">介紹</div>
+                <p>逢甲夜市的範圍包括逢甲大學方圓一公里之內，是台中最具人氣的商圈之一，包括逢甲文華夜市、西屯路、逢甲路、福星路都屬商圈的一部分，熱鬧非凡，常是年輕學子的逛街場所。商圈內販賣種類繁多，應有盡有，食衣住行育樂全都包含，令人目不暇給，眾多選擇的小吃聞名遐邇，營業時間大約從下午四點至凌晨二點，對喜愛shoppin逛街、吃吃喝喝的民眾來說這裡真的是五星級的好地方唷！</p>
+                <div class="title" style="background-color:#21BA45">地點</div>
+                <p>逢甲路自逢甲大學至西屯路，福星路自河南路至西安街，逢甲路自逢甲大學至青海路之區域</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui inverted segment">
+        <div class="img-container right">
+
+            <div class="hover-effect">
+                <img src="~/Image/秋虹谷.jpg" width="800" height="800" />
+                <div class="img-message">
+                    <span>熱門程度</span>
+                    <div class="ui huge star rating" data-rating="3" data-max-rating="5"></div>
+                </div>
+            </div>
+
+            <div class="detail">
+                <div class="title" style="background-color:#DB2828">介紹</div>
+                <p>台中市的大型滯洪池公園，是一座下凹型的綠地景觀公園，內設有人工湖，具滯洪、排水、調節空氣的多重功能，搭配巧妙而精湛的設計風格，現已成為台中市著名新興地標。
+設計師將英國地景大師LancelotBrowns的精神做為設計概念，特別融入曲折的河湖、丘陵意象，搭配自然的枕木步道及特殊的建築景觀。白天，民眾由上而下可綜覽整座秋紅谷的綠地景觀，夜晚燈火通明之際，更顯都會浪漫美感。</p>
+                <div class="title" style="background-color:#21BA45">地點</div>
+                <p>台中市西屯區朝富路　 (台灣大道與西屯區河南路交界)</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
