@@ -134,6 +134,8 @@
     <Content Include="Global.asax" />
     <Content Include="Image\account.png" />
     <Content Include="Image\Aircraft.jpg" />
+    <Content Include="Image\Book.png" />
+    <Content Include="Image\Person.png" />
     <Content Include="Image\逢甲夜市.jpg" />
     <Content Include="Image\LoginBackground.jfif" />
     <Content Include="Image\travel.png" />
@@ -212,6 +214,7 @@
     <Content Include="Views\Try\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Backup\Index.cshtml" />
+    <Content Include="Views\Home\PersonalInfo.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

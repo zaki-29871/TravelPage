@@ -35,5 +35,10 @@ namespace Travel.Controllers
         {
             return View();
         }
+
+        public ActionResult PersonalInfo()
+        {
+            return View();
+        }
     }
 }

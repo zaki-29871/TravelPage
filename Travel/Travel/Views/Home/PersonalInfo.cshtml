@@ -1,0 +1,117 @@
+﻿<script>
+    $('.ui.menu .item').removeClass('active')
+    $('.ui.menu .item.personalinfo').addClass('active')
+
+    $(function () {
+        $('.ui.rating').rating()
+    })
+</script>
+
+<style>
+    .ui.horizontal.divider.header{
+        font-family:'Microsoft JhengHei';
+        font-size:3em;
+        color:#DB2828;
+    }
+    .person-icon{
+        text-align:center;
+    }
+    .person-icon img{
+        width:100%;
+        height:auto;
+    }
+
+    .person-icon span{
+        line-height:2em;
+        font-size:2em;
+    }
+
+    .person-info{
+        width:800px;
+        height:auto;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .books{
+        margin-left:10%;
+        margin-right:10%;
+        margin-top:3em;
+    }
+
+    .img img{
+        width:100%;
+        height:auto;
+    }
+
+    
+</style>
+
+<div class="person-info">
+    <div class="ui grid">
+        <div class="four wide column person-icon">
+            <img src="~/Image/Person.png"/>
+            <span>Jack</span>
+        </div>
+        <div class="twelve wide column">
+            <div class="ui segments">
+                <div class="ui segment">描述1</div>
+                <div class="ui segment">描述2</div>
+                <div class="ui segment">描述3</div>
+                <div class="ui segment">描述4</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ui horizontal divider header">我的旅遊書</div>
+<div class="books">
+    <div class="ui four cards">
+        <div class="card">
+            <div class="img">
+                <img src="~/Image/Book.png" />
+            </div>
+            <div class="extra">
+                Rating:
+                <div class="ui star rating" data-rating="4"></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="~/Image/Book.png" />
+            </div>
+            <div class="extra">
+                Rating:
+                <div class="ui star rating" data-rating="4"></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="~/Image/Book.png" />
+            </div>
+            <div class="extra">
+                Rating:
+                <div class="ui star rating" data-rating="4"></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="~/Image/Book.png" />
+            </div>
+            <div class="extra">
+                Rating:
+                <div class="ui star rating" data-rating="4"></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="~/Image/Book.png" />
+            </div>
+            <div class="extra">
+                Rating:
+                <div class="ui star rating" data-rating="4"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
