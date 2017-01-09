@@ -2,35 +2,58 @@
 <html>
 <head>
     <script src="~/Scripts/jquery-3.1.0.js"></script>
-    <link href="~/Semantic-UI-CSS-master/semantic.min.css" rel="stylesheet" />
-    <script src="~/Semantic-UI-CSS-master/semantic.min.js"></script>
+    @*<link href="~/Semantic-UI-CSS-master/semantic.min.css" rel="stylesheet" />
+    <script src="~/Semantic-UI-CSS-master/semantic.min.js"></script>*@
     <style>
-        *{
-            font-family: 'Microsoft JhengHei';
+
+        .top {
+            margin-top: 30px !important;
+            width: 100%;
+            height: 70px;
+            background-color: black;
+            position: relative;
+            opacity:0.74;
+            z-index:999 ;
         }
 
-        #main-menu{
-            background-color:#2185D0;
-            font-family:'Microsoft JhengHei'; /*微軟正黑體*/
-            font-size:0.5em;
-            opacity:0.8;
+        #logo {
+            margin-left: 20%;
+	        height: 70px;
+            width: 60px;
+            position: absolute;
         }
 
-        #main-menu .menu .item{
-            font-family:'Microsoft JhengHei'; /*微軟正黑體*/
+        #logo img{
+            height: 60px;
+            width: 60px;
+            margin-top: 5px;
+            /*display: block;
+            margin: auto;*/
         }
 
-        #main-menu span{
-            color:white;
-            font-size:4em;
+        .menu {
+            right: 0;
+            margin-right: 20%;
+            position: absolute;
+
+        }
+        .menu ul li {
+	        padding: 10px 0 0 70px;
+	        display: inline-block;
+	        text-align: right;
+	        font-size: 11pt;
+	        text-transform: uppercase;
+
+        }
+        .menu a:link, a:visited {
+	        color: #FFFFFF;
+	        text-decoration: none;
         }
 
-        /*travel.png*/
-        #travel-image{ 
-            width:40px;
-            height:40px;
-            filter: invert(100%);
+        .menu a:hover {
+            color: #1E90FF;
         }
+
     </style>
 
     
@@ -38,7 +61,7 @@
     <title>我的旅遊書</title>
 </head>
 <body>
-    <div id="main-menu" class="ui blue inverted segment">
+    @*<div id="main-menu" class="ui blue inverted segment">
         <a href="~/Home/Index" style="position:absolute; left:10px; top:10px">
             <img id="travel-image" src="~/Image/travel.png" />
             <span>個人旅遊書</span>
@@ -54,7 +77,25 @@
                 <a class="item personalinfo" href="~/Home/PersonalInfo">個人主頁</a>
             </div>
         </div>
+    </div>*@
+
+    <div class="top">
+        <div id="logo">
+            <a href="~/Home/Index"><img src="~/Image/icon.png"></a>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="~/Home/Index">首頁</a></li>
+                <li><a href="~/Home/Register">註冊</a></li>
+                <li><a href="~/Home/About">關於</a></li>
+                <li><a href="~/Home/Member">會員資料</a></li>
+                <li><a href="~/Home/Login">登入</a></li>
+                <li><a href="~/Home/PersonalInfo">個人主頁</a></li>
+            </ul>
+        </div>
     </div>
+
 
     @RenderBody()
 </body>

@@ -1,4 +1,7 @@
-﻿<script>
+﻿<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/button.css">
+
+<script>
     $('.ui.menu .item').removeClass('active')
     $('.ui.menu .item.index').addClass('active')
 
@@ -8,7 +11,7 @@
 </script>
 <style>
     /*Hover effects*/
-    .hover-effect img{
+    /*.hover-effect img{
         width:100%;
         cursor:pointer;
         transition: filter 0.5s;
@@ -18,7 +21,7 @@
         filter:blur(3px);
     }
 
-    /*img-message hover*/
+    img-message hover
     .hover-effect .img-message{
         position:absolute;
         height:0;
@@ -37,7 +40,7 @@
         height:2em;
     }
 
-    /*img-message content hover*/
+    img-message content hover
     .hover-effect .img-message *{
         opacity:0;
         transition: opacity 0.1s;
@@ -67,14 +70,495 @@
         position:absolute;
         font-family:'Microsoft JhengHei UI' !important; 
         font-size:1.5em !important;
+    }*/
+
+    .slider {
+      overflow: hidden;
+	  width: 100%;
+      height: auto;
+      top: 0;
+      position: absolute;
+      z-index:0 !important;
     }
+
+
+    .slider figure div {
+      width: 20%;
+      float: left;
+    }
+
+    .slider figure img {
+      width: 100%;
+	    height: 600px;
+      float: left;
+    }
+
+    .slider figure {
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      /*animation: 30s slidy infinite;*/
+    }
+
+    @@keyframes slidy {
+      0%{
+        left: 0%;
+      }
+
+      10%{
+        left: 0%;
+      }
+
+      12%{
+        left: -100%;
+      }
+
+      22%{
+        left: -100%;
+      }
+
+      24%{
+        left: -200%;
+      }
+
+      34%{
+        left: -200%;
+      }
+
+      36%{
+        left: -300%;
+      }
+
+      46%{
+        left: -300%;
+      }
+
+      48%{
+        left: -400%;
+      }
+
+      58%{
+        left: -400%;
+      }
+
+      60%{
+        left: -300%;
+      }
+
+      70%{
+        left: -300%;
+      }
+
+      72%{
+        left: -200%;
+      }
+
+      82%{
+        left: -200%;
+      }
+
+      84%{
+        left: -100%;
+      }
+
+      94%{
+        left: -100%;
+      }
+
+      96%{
+        left: 0%;
+      }
+
+    }
+
+    .slide {
+      display:none;
+    }
+    .w3-left, .w3-right, .w3-badge {
+      cursor:pointer;
+    }
+    .w3-badge {
+      height: 15px;
+      width: 15px;
+      padding: 0;
+    }
+
+    .center{
+      width: 100%;
+      height: 200px;
+      margin-top: 530px;
+    }
+
+    #left {
+      width: 31%;
+      height: 200px;
+      position: absolute;
+      left: 0;
+      overflow: hidden;
+      opacity:0.7;
+    }
+
+
+    #middle {
+      width: 31%;
+      height: 200px;
+      position: absolute;
+      margin-left: 34.5%;
+      overflow: hidden;
+      opacity:0.7;
+    }
+
+    #right {
+      width: 31%;
+      height: 200px;
+      position: absolute;
+      right: 0;
+      overflow: hidden;
+      opacity:0.7;
+    }
+
+    #left img{
+      width: 100%;
+      height: 200px;
+      zoom: 2;
+      margin-top: -38%;
+      z-index: -1;
+    }
+
+    #middle img{
+      width: 100%;
+      height: 200px;
+      zoom: 1.5;
+      margin-top: -25%;
+    }
+
+    #right img{
+      width: 100%;
+      height: 200px;
+      zoom: 1.5;
+      margin-top: -10%;
+    }
+
+    #introbutton {
+      margin-top: 65px;
+      background: rgba(0,0,0,0.4);
+      width: 100%;
+      height: 70px;
+      position: absolute;
+      text-align: center;
+    }
+
+    #introbutton span{
+      line-height:70px;
+      font-size: 30pt;
+      color: white;
+    }
+
+    .sentence{
+      width: 100%;
+      height: 100px;
+      margin-top: 45px;
+      color: rgba(0,0,0,0.7);
+    }
+
+    .sentence h3{
+      font-family: cursive;
+      text-align: center;
+    }
+
+    .sentence h4{
+      font-family: cursive;
+      text-align: right;
+      margin-right: 25%;
+    }
+
+    .intro{
+      width: 100%;
+      height: 450px;
+      overflow: hidden;
+
+    }
+
+    /*
+    planningintro
+    */
+
+    #planning{
+      width: 100%;
+      height: 90%;
+      background-image: url(../Image/planning.jpg);
+      background-size: cover;
+      background-position: 0% 30%;
+      margin: 22px auto 0 auto;
+      display: block;
+    }
+
+    .planningintro{
+      width: 40%;
+      height: 100%;
+      float: left;
+      background-color: rgba(255,255,255,0.7);
+    }
+
+    .planningintro h1, p{
+      text-align: center;
+    }
+
+    /*
+    sceneryintro
+    */
+
+    #scenery{
+      width: 100%;
+      height: 90%;
+      background-image: url(../Image/s6.jpg);
+      background-size: cover;
+      background-position: 0% 30%;
+      margin: 22px auto 0 auto;
+      display: block;
+    }
+
+    .sceneryintro{
+      width: 40%;
+      height: 100%;
+      float: right;
+      background-color: rgba(255,255,255,0.7);
+    }
+
+    .sceneryintro h1, p{
+      text-align: center;
+    }
+
+    /*
+    foodintro
+    */
+
+    #food{
+      width: 100%;
+      height: 90%;
+      background-image: url(../Image/f14.jpg);
+      background-size: cover;
+      background-position: 0% 30%;
+      margin: 22px auto 0 auto;
+      display: block;
+    }
+
+    .foodintro{
+      width: 40%;
+      height: 100%;
+      float: left;
+      background-color: rgba(255,255,255,0.7);
+    }
+
+    .foodintro h1, p{
+      text-align: center;
+    }
+
+    /*
+    shoppingintro
+    */
+    #shopping{
+      width: 100%;
+      height: 90%;
+      background-image: url(../Image/sh1.jpg);
+      background-size: cover;
+      background-position: 0% 40%;
+      margin: 22px auto 0 auto;
+      display: block;
+    }
+
+    .shoppingintro{
+      width: 40%;
+      height: 100%;
+      float: right;
+      background-color: rgba(255,255,255,0.7);
+    }
+
+    .shoppingintro h1, p{
+      text-align: center;
+    }
+
+    .space {
+      width: 100%;
+      height: 50px;
+    }
+
+    .footerBackground{
+      overflow: hidden;
+      width: 100%;
+      height: 600px;
+      background-image: url(../Image/background.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: 100% 70%;
+      background-repeat: no-repeat;
+    }
+
+    .footer{
+      margin-top: 30px;
+      width: 100%;
+      height: 40%;
+      background: rgba(0,0,0,0.3);
+    }
+
 
 </style>
 
+<div class="slider">
+    <figure>
+        <div class="slide">
+            <img src="~/Image/slide4.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="~/Image/slide2.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="~/Image/slide3.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="~/Image/slide1.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="~/Image/slide5.jpg">
+        </div>
+    </figure>
+    <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+    </div>
+</div>
 
 
 
-<div class="ui segments">
+<div class="center">
+    <div id="left">
+        <div id="introbutton">
+            <span>景點</span>
+        </div>
+        <img id="s" src="~/Image/homebuilding.jpg" alt="">
+    </div>
+    
+
+    <div id="middle">
+        <div id="introbutton">
+            <span>美食</span>
+        </div>
+        <img src="~/Image/homefood.jpg" alt="">
+    </div>
+
+    <div id="right">
+        <div id="introbutton">
+            <span>購物</span>
+        </div>
+        <img src="~/Image/homeshop.jpg" alt="">
+    </div>
+</div>
+
+<div class="sentence">
+    <h3>" The world is a book and those who do not travel read only one page. "</h3>
+        <h4>St. Augustine</h4>
+</div>
+
+<div class="intro">
+    <div id="planning">
+        <div class="planningintro">
+            <h1 style="margin:17% 0 30px 0">行程計劃</h1>
+            <hr>
+            <p>為你提供台灣多個景點介紹<br>輕鬆計劃行程<br>享受當地的文化<br>尋找屬於自己的旅遊</p>
+            <a href="#" class="ui green button" role="button" style="opacity:0.8;width:30%;margin-left:35%;">了解更多</a>
+                @*<a href="#"><button class="ui blue button" style="opacity:0.8;width:30%;margin-left:35%;">了解更多</button></a>*@
+                <hr>
+        </div>
+    </div>
+</div>
+
+<div class="intro">
+    <div id="scenery">
+        <div class="sceneryintro">
+            <h1 style="margin:17% 0 30px 0">景點介紹</h1>
+            <hr>
+            <p>為你提供台灣多個景點介紹<br>輕鬆計劃行程<br>享受當地的文化<br>尋找屬於自己的旅遊</p>
+            <a href="#" class="ui blue button" role="button" style="opacity:0.8;width:30%;margin-left:35%;">了解更多</a>
+            @*<a href="#"><button class="ui blue button" style="opacity:0.8;width:30%;margin-left:35%;">了解更多</button></a>*@
+                <hr>
+        </div>
+    </div>
+</div>
+
+<div class="intro">
+    <div id="food">
+        <div class="foodintro">
+            <h1 style="margin:20% 0 30px 0">美食介紹</h1>
+            <hr>
+            <p>為你提供台灣多個景點介紹<br>輕鬆計劃行程<br>享受當地的文化<br>尋找屬於自己的旅遊</p>
+            <a href="#" class="ui blue button" role="button" style="opacity:0.8;width:30%;margin-left:35%;">了解更多</a>
+            @*<a href="#"><button class="ui blue button" style="opacity:0.8;width:30%;margin-left:35%;">了解更多</button></a>*@
+                <hr>
+        </div>
+    </div>
+</div>
+
+
+<div class="intro">
+    <div id="shopping">
+        <div class="shoppingintro">
+            <h1 style="margin:17% 0 30px 0">購物介紹</h1>
+            <hr>
+            <p>為你提供台灣多個景點介紹<br>輕鬆計劃行程<br>享受當地的文化<br>尋找屬於自己的旅遊</p>
+            <a href="#" class="ui blue button" role="button" style="opacity:0.8;width:30%;margin-left:35%;">了解更多</a>
+            @*<a href="#"><button class="ui blue button" style="opacity:0.8;width:30%;margin-left:35%;">了解更多</button></a>*@
+                <hr>
+        </div>
+    </div>
+</div>
+
+<div class="space"></div>
+
+<div class="footerBackground">
+    <div class="footer"></div>
+</div>
+
+
+<script>
+      var slideIndex = 1;
+
+       showDivs(slideIndex);
+
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("slide");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        x[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " w3-white";
+      }
+
+
+
+</script>
+
+
+
+@*<div class="ui segments">
     <div class="ui inverted segment">
         <div class="ui grid">
             <div class="eight wide column">
@@ -122,5 +606,5 @@
             </div>
         </div>
     </div>
-</div>
+</div>*@
 
