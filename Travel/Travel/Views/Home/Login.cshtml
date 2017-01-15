@@ -1,10 +1,13 @@
-﻿
+﻿<link href="~/Semantic-UI-CSS-master/semantic.min.css" rel="stylesheet" />
+<script src="~/Semantic-UI-CSS-master/semantic.min.js"></script>
+
 <style>
     body{
         /*background-color:#1B1C1D; black*/
         /*overflow:hidden; /*No scroll*/
         background-image:url(../../Image/LoginBackground.jfif);
-        background-size: 100% auto; /*一張填滿螢幕*/
+        background-repeat:no-repeat;
+        background-size:cover; /*一張填滿螢幕*/
     }    
 
     #main{
@@ -25,6 +28,8 @@
     $('.ui.menu .item').removeClass('active')
     $('.ui.menu .item.login').addClass('active')
 </script>
+
+
 
 <div id="main" class="ui inverted segment">
     <form class="ui massive inverted form" method="post">

@@ -40,5 +40,10 @@ namespace Travel.Controllers
         {
             return View();
         }
+
+        public ActionResult Test()
+        {
+            return View();
+        }
     }
 }

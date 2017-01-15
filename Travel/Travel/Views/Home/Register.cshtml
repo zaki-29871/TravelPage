@@ -1,4 +1,7 @@
-﻿<script>
+﻿<link href="~/Semantic-UI-CSS-master/semantic.min.css" rel="stylesheet" />
+<script src="~/Semantic-UI-CSS-master/semantic.min.js"></script>
+
+<script>
     $('.ui.menu .item').removeClass('active')
     $('.ui.menu .item.register').addClass('active')
 </script>
@@ -8,7 +11,8 @@
         /*background-color:#1B1C1D; black*/
         /*overflow:hidden; /*No scroll*/
         background-image: url(../../Image/Aircraft.jpg);
-        background-size: 100% auto; /*一張填滿螢幕*/
+        background-repeat:no-repeat;
+        background-size:cover; /*一張填滿螢幕*/
     }
 
     #text {
@@ -44,7 +48,7 @@
     #main {
         width:450px;
         position:absolute;        
-        top: 300px; /*Vertical align*/
+        top: 15em;
         right:150px;
     }
 

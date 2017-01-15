@@ -1,4 +1,7 @@
-﻿<script>
+﻿<link href="~/Semantic-UI-CSS-master/semantic.min.css" rel="stylesheet" />
+<script src="~/Semantic-UI-CSS-master/semantic.min.js"></script>
+
+<script>
     $('.ui.menu .item').removeClass('active')
     $('.ui.menu .item.personalinfo').addClass('active')
 
@@ -13,17 +16,32 @@
         font-size:3em;
         color:#DB2828;
     }
-    .person-icon{
-        text-align:center;
+
+    .person-info-background{
+        background-color: #bfbfbf;
     }
-    .person-icon img{
+    .name{
+        text-align:center;
+        background-color:#A5673F;
+        margin:0.7em 0 0.7em 0;        
+    }
+    .mugshot{
+        width:100%;
+        height:auto;
+        padding:0.5em 0.5em 0.5em 0.5em;
+        border:groove 1px;
+        background-color:white;
+    }
+
+    .mugshot img{
         width:100%;
         height:auto;
     }
 
-    .person-icon span{
+    .name span{
         line-height:2em;
         font-size:2em;
+        font-family:'Microsoft JhengHei';
     }
 
     .person-info{
@@ -31,6 +49,7 @@
         height:auto;
         margin-left:auto;
         margin-right:auto;
+        margin-top:2em;
     }
 
     .books{
@@ -44,25 +63,41 @@
         height:auto;
     }
 
-    
+    .describe{
+        background-color:#494d50;
+        opacity:0.8;
+        margin:0 0 0.7em 0;
+        padding:0 0.5em 0 0.5em;
+        color:white;
+        height:2em;
+        font-size:1.5em;
+        line-height:2em;
+        font-family:'Microsoft JhengHei';
+    }
 </style>
 
-<div class="person-info">
-    <div class="ui grid">
-        <div class="four wide column person-icon">
-            <img src="~/Image/Person.png"/>
-            <span>Jack</span>
-        </div>
-        <div class="twelve wide column">
-            <div class="ui segments">
-                <div class="ui segment">描述1</div>
-                <div class="ui segment">描述2</div>
-                <div class="ui segment">描述3</div>
-                <div class="ui segment">描述4</div>
+<div class="person-info-background">
+    <div class="person-info">
+        <div class="ui grid">
+            <div class="four wide column person-icon">
+                <div class="mugshot">
+                    <img src="~/Image/Person.png" />
+                </div>
+                <div class="name">
+                    <span>王瑞評</span>
+                </div>
+            </div>
+            <div class="twelve wide column">
+                <div class="describe">姓名：王瑞評</div>
+                <div class="describe">興趣：吃</div>
+                <div class="describe">旅遊偏好：好吃優先，好玩其次</div>
+                <div class="describe">敘述一：沒什麼好敘述的</div>
+                <div class="describe">敘述二：就說沒什麼好敘述的</div>
             </div>
         </div>
     </div>
 </div>
+
 <div class="ui horizontal divider header">我的旅遊書</div>
 <div class="books">
     <div class="ui four cards">
