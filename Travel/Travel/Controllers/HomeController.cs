@@ -45,5 +45,10 @@ namespace Travel.Controllers
         {
             return View();
         }
+
+        public ActionResult RestaurantIntro()
+        {
+            return View();
+        }
     }
 }

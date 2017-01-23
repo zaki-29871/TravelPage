@@ -136,15 +136,31 @@
     <Content Include="Image\Aircraft.jpg" />
     <Content Include="Image\background.jpg" />
     <Content Include="Image\Book.png" />
+    <Content Include="Image\eatIcon.png" />
+    <Content Include="Image\error.png" />
     <Content Include="Image\f14.jpg" />
+    <Content Include="Image\f15.jpg" />
+    <Content Include="Image\f16.jpg" />
+    <Content Include="Image\food.png" />
     <Content Include="Image\homebuilding.jpg" />
     <Content Include="Image\homefood.jpg" />
     <Content Include="Image\homeshop.jpg" />
     <Content Include="Image\icon.png" />
     <Content Include="Image\Person.png" />
     <Content Include="Image\planning.jpg" />
+    <Content Include="Image\relaxIcon.png" />
+    <Content Include="Image\s1.jpg" />
+    <Content Include="Image\s10.jpg" />
+    <Content Include="Image\s1011.jpg" />
+    <Content Include="Image\s1012.jpg" />
+    <Content Include="Image\s1013.jpg" />
+    <Content Include="Image\s11.png" />
     <Content Include="Image\s6.jpg" />
+    <Content Include="Image\s7.jpg" />
     <Content Include="Image\sh1.jpg" />
+    <Content Include="Image\sh2.JPG" />
+    <Content Include="Image\sh3.jpg" />
+    <Content Include="Image\shopIcon.png" />
     <Content Include="Image\slide1.jpg" />
     <Content Include="Image\slide2.jpg" />
     <Content Include="Image\slide3.jpg" />
@@ -171,6 +187,10 @@
     <Content Include="Semantic-UI-CSS-master\semantic.js" />
     <Content Include="Semantic-UI-CSS-master\semantic.min.css" />
     <Content Include="Semantic-UI-CSS-master\semantic.min.js" />
+    <Content Include="Views\relaxIcon.png" />
+    <Content Include="Views\sh2.JPG" />
+    <Content Include="Views\sh3.jpg" />
+    <Content Include="Views\shopIcon.png" />
     <Content Include="Web.config" />
     <Content Include="資料庫帳號密碼.txt" />
   </ItemGroup>
@@ -230,6 +250,7 @@
     <Content Include="Backup\Index.cshtml" />
     <Content Include="Views\Home\PersonalInfo.cshtml" />
     <Content Include="Views\Home\Test.cshtml" />
+    <Content Include="Views\Home\RestaurantIntro.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
