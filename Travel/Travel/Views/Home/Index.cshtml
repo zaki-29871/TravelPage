@@ -10,67 +10,6 @@
     })
 </script>
 <style>
-    /*Hover effects*/
-    /*.hover-effect img{
-        width:100%;
-        cursor:pointer;
-        transition: filter 0.5s;
-    }
-
-    .hover-effect:hover img{
-        filter:blur(3px);
-    }
-
-    img-message hover
-    .hover-effect .img-message{
-        position:absolute;
-        height:0;
-        background-color:#2185D0;
-        line-height:2em;
-        width:auto;
-        bottom:1rem;
-        left:1rem;
-        right:1rem;
-        font-size:2em;
-        color:white;
-        transition: height 0.3s;
-    }
-    
-    .hover-effect:hover .img-message{
-        height:2em;
-    }
-
-    img-message content hover
-    .hover-effect .img-message *{
-        opacity:0;
-        transition: opacity 0.1s;
-    }
-
-    .hover-effect:hover .img-message *{
-        transition-delay:0.2s;        
-        opacity:1;
-    }
-
-    .hover-effect .img-message span{
-        margin-left:1em;
-    }
-
-    .title{
-        text-align:center;
-        width:100%;
-        height:2em;
-        color:white;
-        line-height:2em;
-        border-radius:1em;
-        margin-bottom:0.7em;
-        margin-top:0.7em;
-    }
-
-    .detail{
-        position:absolute;
-        font-family:'Microsoft JhengHei UI' !important; 
-        font-size:1.5em !important;
-    }*/
 
     .slider {
       overflow: hidden;
@@ -191,53 +130,43 @@
     }
 
     #left {
-      width: 31%;
-      height: 200px;
-      position: absolute;
-      left: 0;
-      overflow: hidden;
-      opacity:0.7;
+        width: 31%;
+        height: 200px;
+        position: absolute;
+        left: 0;
+        overflow: hidden;
+        opacity: 0.7;
+        background-image: url(/Image/homebuilding.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
 
     #middle {
-      width: 31%;
-      height: 200px;
-      position: absolute;
-      margin-left: 34.5%;
-      overflow: hidden;
-      opacity:0.7;
+        width: 31%;
+        height: 200px;
+        position: absolute;
+        margin-left: 34.5%;
+        overflow: hidden;
+        opacity: 0.7;
+        background-image: url(/Image/homefood.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
     }
 
     #right {
-      width: 31%;
-      height: 200px;
-      position: absolute;
-      right: 0;
-      overflow: hidden;
-      opacity:0.7;
-    }
-
-    #left img{
-      width: 100%;
-      height: 200px;
-      zoom: 2;
-      margin-top: -38%;
-      z-index: -1;
-    }
-
-    #middle img{
-      width: 100%;
-      height: 200px;
-      zoom: 1.5;
-      margin-top: -25%;
-    }
-
-    #right img{
-      width: 100%;
-      height: 200px;
-      zoom: 1.5;
-      margin-top: -10%;
+        width: 31%;
+        height: 200px;
+        position: absolute;
+        right: 0;
+        overflow: hidden;
+        opacity: 0.7;
+        background-image: url(/Image/homeshop.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
     #introbutton {
@@ -450,7 +379,6 @@
         <div id="introbutton">
             <span>景點</span>
         </div>
-        <img id="s" src="~/Image/homebuilding.jpg" alt="">
     </div>
     
 
@@ -458,14 +386,12 @@
         <div id="introbutton">
             <span>美食</span>
         </div>
-        <img src="~/Image/homefood.jpg" alt="">
     </div>
 
     <div id="right">
         <div id="introbutton">
             <span>購物</span>
         </div>
-        <img src="~/Image/homeshop.jpg" alt="">
     </div>
 </div>
 

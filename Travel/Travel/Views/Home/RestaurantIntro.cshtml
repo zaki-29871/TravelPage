@@ -6,94 +6,107 @@
 
 
 <style>
-      body {
-          margin: 0px;
-          padding: 0px;
-          background: rgba(220,220,220,0.3);
-      }
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: rgba(220,220,220,0.3);
+    }
 
 
-      .header {
-          top: 0;
-          width: 100%;
-          height: 500px;
-          background-image: url("../Image/food.png");
-          position: absolute;
-          background-repeat: no-repeat;
-          overflow: hidden;
-          background-position: 10% 40%;
-          opacity: 0.8;
-          background-size: cover;
-      }
+    .header {
+        top: 0;
+        width: 100%;
+        height: 500px;
+        background-image: url("../Image/food.png");
+        position: absolute;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-position: 10% 40%;
+        opacity: 0.8;
+        background-size: cover;
+    }
 
-      .choosing {
-          margin-top: 430px;
-          width: 100%;
-          height: 180px;
-      }
+    .choosing {
+        margin-top: 430px;
+        width: 100%;
+        height: 180px;
+        position:relative;
+    }
 
-          .choosing h2 {
-              bottom: 3px;
-              color: black;
-              z-index: 99;
-              text-decoration: none;
-              position: relative;
-              text-align: center;
-          }
+    .choosing .content{
+        position:absolute;
+        width: 600px;
+        height: 100%;
+        left:0;
+        right:0;
+        margin:auto;
+    }
 
-          .choosing a:link {
-              text-decoration: none;
-          }
+    .choosing h2 {
+        bottom: 3px;
+        color: black;
+        z-index: 99;
+        text-decoration: none;
+        position: relative;
+        text-align: center;
+    }
 
-      .left {
-          width: 120px;
-          height: 180px;
-          left: 550px;
-          position: absolute;
-      }
+    .choosing a{        
+        position:absolute;
+        left:0;
+        right:0;
+        width:120px;
+        margin: auto;
+    }
 
-      .mid {
-          width: 120px;
-          height: 180px;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          left: 0;
-          right: 0;
-          position: absolute;
-      }
+    .choosing a:link {
+        text-decoration: none;
+    }
 
-      .right {
-          width: 120px;
-          height: 180px;
-          right: 550px;
-          position: absolute;
-      }
+    .left {
+        width: 120px;
+        height: 100%;
+        left:0;
+        position:absolute;
+    }
 
-      .choosing img {
-          width: 120px;
-          height: auto;
-          display: block;
-          margin: auto;
-      }
+    .mid {
+        width: 120px;
+        height: 100%;
+        left:0;
+        right:0;
+        margin:auto;
+        position:absolute;
+    }
 
-      .center {
-          width: 100%;
-          height: 1400px;
-          margin-top: 20px;
-          /*background-color: #dcdcdc;*/
-      }
+    .right {
+        width: 120px;
+        height: 100%;
+        right:0;
+        position:absolute;
+    }
 
-      .area {
-          margin-top: 20px;
-          right: 4%;
-          width: 10%;
-          height: 1000px;
-          /*background-color: white;*/
-          text-align: center;
-          position: absolute;
-          /*position: fixed;
-    top:0;*/
+    .choosing img {
+        width: 100%;
+    }
+
+    .center {
+        width: 100%;
+        height: 1400px;
+        margin-top: 20px;
+        /*background-color: #dcdcdc;*/
+    }
+
+    .area {
+        margin-top: 20px;
+        right: 4%;
+        width: 10%;
+        height: 1000px;
+        /*background-color: white;*/
+        text-align: center;
+        position: absolute;
+        /*position: fixed;
+        top:0;*/
       }
 
       @@media (height: 500px) {
@@ -574,7 +587,7 @@
     <div class="header"></div>
 
     <div class="choosing">
-        <div>
+        <div class="content">
             <div class="left">
                 <a href="#"><img src="../Image/relaxIcon.png" alt=""><h2>景點</h2></a>
             </div>

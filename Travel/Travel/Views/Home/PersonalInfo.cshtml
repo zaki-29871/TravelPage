@@ -1,152 +1,60 @@
-﻿<link href="~/Semantic-UI-CSS-master/semantic.min.css" rel="stylesheet" />
-<script src="~/Semantic-UI-CSS-master/semantic.min.js"></script>
+﻿<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 
 <script>
     $('.ui.menu .item').removeClass('active')
     $('.ui.menu .item.personalinfo').addClass('active')
-
-    $(function () {
-        $('.ui.rating').rating()
-    })
 </script>
 
 <style>
-    .ui.horizontal.divider.header{
-        font-family:'Microsoft JhengHei';
-        font-size:3em;
-        color:#DB2828;
-    }
+    #person-info{
+        position:absolute;
+        width:300px;
+        top:100px;
+        bottom:0;
+    }    
 
-    .person-info-background{
-        background-color: #bfbfbf;
-    }
-    .name{
-        text-align:center;
-        background-color:#A5673F;
-        margin:0.7em 0 0.7em 0;        
-    }
-    .mugshot{
+    .card {
+        background-color:#1B1C1D;
         width:100%;
-        height:auto;
-        padding:0.5em 0.5em 0.5em 0.5em;
-        border:groove 1px;
-        background-color:white;
+        height:100%;
+        text-align: center;
+        overflow: hidden;
+    } 
+
+    .card.hovercard .cardheader {
+        background: url("http://lorempixel.com/850/280/nature/4/");
+        background-size: cover;
+        height: 135px;
     }
 
-    .mugshot img{
-        width:100%;
-        height:auto;
+    .card.hovercard .avatar {
+        position: relative;
+        top: -50px;
+        margin-bottom: -50px;
     }
 
-    .name span{
-        line-height:2em;
-        font-size:2em;
-        font-family:'Microsoft JhengHei';
-    }
-
-    .person-info{
-        width:800px;
-        height:auto;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:2em;
-    }
-
-    .books{
-        margin-left:10%;
-        margin-right:10%;
-        margin-top:3em;
-    }
-
-    .img img{
-        width:100%;
-        height:auto;
-    }
-
-    .describe{
-        background-color:#494d50;
-        opacity:0.8;
-        margin:0 0 0.7em 0;
-        padding:0 0.5em 0 0.5em;
-        color:white;
-        height:2em;
-        font-size:1.5em;
-        line-height:2em;
-        font-family:'Microsoft JhengHei';
+    .card.hovercard .avatar img {
+        width: 100px;
+        height: 100px;
+        max-width: 100px;
+        max-height: 100px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        border: 5px solid rgb(27, 28, 29);
     }
 </style>
 
-<div class="person-info-background">
-    <div class="person-info">
-        <div class="ui grid">
-            <div class="four wide column person-icon">
-                <div class="mugshot">
-                    <img src="~/Image/Person.png" />
-                </div>
-                <div class="name">
-                    <span>王瑞評</span>
-                </div>
-            </div>
-            <div class="twelve wide column">
-                <div class="describe">姓名：王瑞評</div>
-                <div class="describe">興趣：吃</div>
-                <div class="describe">旅遊偏好：好吃優先，好玩其次</div>
-                <div class="describe">敘述一：沒什麼好敘述的</div>
-                <div class="describe">敘述二：就說沒什麼好敘述的</div>
-            </div>
+<div id="person-info">
+    <div class="card hovercard">
+        <div class="cardheader">
+        </div>
+        <div class="avatar">
+            <img alt="" src="http://lorempixel.com/100/100/people/9/">
         </div>
     </div>
 </div>
 
-<div class="ui horizontal divider header">我的旅遊書</div>
-<div class="books">
-    <div class="ui four cards">
-        <div class="card">
-            <div class="img">
-                <img src="~/Image/Book.png" />
-            </div>
-            <div class="extra">
-                Rating:
-                <div class="ui star rating" data-rating="4"></div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="img">
-                <img src="~/Image/Book.png" />
-            </div>
-            <div class="extra">
-                Rating:
-                <div class="ui star rating" data-rating="4"></div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="img">
-                <img src="~/Image/Book.png" />
-            </div>
-            <div class="extra">
-                Rating:
-                <div class="ui star rating" data-rating="4"></div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="img">
-                <img src="~/Image/Book.png" />
-            </div>
-            <div class="extra">
-                Rating:
-                <div class="ui star rating" data-rating="4"></div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="img">
-                <img src="~/Image/Book.png" />
-            </div>
-            <div class="extra">
-                Rating:
-                <div class="ui star rating" data-rating="4"></div>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 
