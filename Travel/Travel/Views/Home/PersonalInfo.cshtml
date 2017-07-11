@@ -6,34 +6,38 @@
 </script>
 
 <style>
+    *:not(.glyphicon){
+        font-family:'Microsoft JhengHei';
+    }
+
     #person-info{
         position:absolute;
         width:300px;
         top:100px;
         bottom:0;
+        background-color:#2e353d;
     }    
 
     .card {
-        background-color:#1B1C1D;
         width:100%;
-        height:100%;
+        height:400px;
         text-align: center;
         overflow: hidden;
     } 
 
-    .card.hovercard .cardheader {
+    .card .cardheader {
         background: url("http://lorempixel.com/850/280/nature/4/");
         background-size: cover;
         height: 135px;
     }
 
-    .card.hovercard .avatar {
+    .card .avatar {
         position: relative;
         top: -50px;
         margin-bottom: -50px;
     }
 
-    .card.hovercard .avatar img {
+    .card .avatar img {
         width: 100px;
         height: 100px;
         max-width: 100px;
@@ -41,17 +45,185 @@
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
-        border: 5px solid rgb(27, 28, 29);
+        border: 5px solid rgb(46, 53, 61);
     }
+
+    .person-menu{
+        width:100%;
+        height:auto;
+        margin-top:14px;
+    }
+
+    .person-menu > .title{
+        background-color: #23282e;
+        line-height: 70px;
+        display: block;
+        text-align: center;
+        font-size:28px;
+        color:white;
+    }
+
+    .person-menu > .item{
+        padding-left: 14px;
+        border-left: 3px solid #2e353d;
+        border-bottom: 1px solid #23282e;
+        line-height:50px;
+        font-size:24px;
+        color:white;
+        cursor:pointer;
+    }
+
+    .person-menu > .item:hover{
+        border-left: 3px solid #d19b3d;
+        background-color: #4f5b69;
+        transition: all 1s ease;
+    }
+
+    .person-menu > .item.active{
+        border-left: 3px solid #d19b3d;
+        background-color: #4f5b69;
+    }
+
+    #view{
+        position:absolute;
+        width:calc(100% - 300px);
+        top:100px;
+        right:0;
+        bottom:0;
+        padding:14px;
+    }
+
+    .travel-book{
+        position:relative;
+        display:inline-block;
+        margin:0 14px 100px 14px;
+        border-radius:60px;
+        width:200px;
+        height:200px;
+        box-shadow:3px 3px 14px;
+    }
+
+    .travel-book > img{
+        position:relative;
+        width:100%;
+        height:100%;
+        border-radius:inherit;
+    }
+
+    .travel-book > .title{
+        position:absolute;
+        width:100%;
+        line-height:40px;
+        font-size:20px;
+        color:white;
+        text-align:center;
+        bottom:-50px;
+        background-color:#1B1C1D;
+        transition:0.5s;
+    }
+
+    .travel-book .hidden-content{
+        position:absolute;
+        width:100%;
+        height:100%;
+        top:0;
+        border-radius:inherit;
+        background-color:rgba(0,0,0,0.7);
+        z-index:1;
+        cursor:pointer;
+        filter:opacity(0);
+        transition:0.5s;
+    }
+
+    .travel-book .hidden-content:hover{
+        filter:opacity(1);
+        transition:0.5s;
+    }
+
+    .travel-book .hidden-content:hover ~ .title{
+        filter:opacity(0);
+        transition:0.5s;
+    }
+
+
+    .travel-book .hidden-content > .title{
+        position:absolute;
+        top:24px;
+        width:100%;
+        line-height:40px;
+        font-size:20px;
+        color:white;
+        text-align:center;
+    }
+
+    .travel-book .hidden-content > .rating{
+        position:absolute;
+        bottom:14px;
+        width:100%;
+        line-height:40px;
+        font-size:24px;
+        color:#FBBD08;
+        text-align:center;
+    }
+
+
 </style>
 
 <div id="person-info">
-    <div class="card hovercard">
-        <div class="cardheader">
-        </div>
+    <div class="card">
+        <div class="cardheader"></div>        
         <div class="avatar">
             <img alt="" src="http://lorempixel.com/100/100/people/9/">
         </div>
+    </div>
+
+    <div class="person-menu">
+        <div class="title">選單</div>
+        <div class="item">
+            <div class="glyphicon glyphicon-th-large"></div>
+            <span>我的旅遊書</span>
+        </div>
+        <div class="item active">
+            <div class="glyphicon glyphicon-heart"></div>
+            <span>收藏旅遊書</span>
+        </div>
+        <div class="item">
+            <div class="glyphicon glyphicon-heart"></div>
+            <span>收藏行程</span>
+        </div>
+    </div>
+</div>
+
+<div id="view">
+    
+    <div class="travel-book">
+        <img src="~/Image/逢甲夜市.jpg" />        
+        <div class="hidden-content">
+            <div class="title">逢甲之旅</div>
+            <div class="rating">
+                <div class="glyphicon glyphicon-star"></div>
+                <div class="glyphicon glyphicon-star"></div>
+                <div class="glyphicon glyphicon-star"></div>
+                <div class="glyphicon glyphicon-star-empty"></div>
+                <div class="glyphicon glyphicon-star-empty"></div>
+            </div>
+        </div>
+        <span class="title">逢甲之旅</span>
+    </div>
+
+    <div class="travel-book">
+        <img src="~/Image/綠島.jpg" />
+        <div class="hidden-content">
+            <div class="title">阿昇的綠島奇幻之旅</div>
+            <div class="rating">
+                <div class="glyphicon glyphicon-star"></div>
+                <div class="glyphicon glyphicon-star"></div>
+                <div class="glyphicon glyphicon-star"></div>
+                <div class="glyphicon glyphicon-star"></div>
+                <div class="glyphicon glyphicon-star-empty"></div>
+            </div>
+        </div>
+        <span class="title">阿昇的綠島奇幻之旅</span>
     </div>
 </div>
 
